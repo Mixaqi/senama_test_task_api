@@ -1,8 +1,8 @@
-import { Router } from 'express';
-import { client } from 'utils/db.js';
-import type { Todo } from 'models/todo.js';
-import { ObjectId } from 'mongodb';
 import type { Request, Response } from 'express';
+import { Router } from 'express';
+import { ObjectId } from 'mongodb';
+import type { Todo } from '../models/todo.js';
+import { client } from '../utils/db.js';
 
 const router = Router();
 const db = client.db('todo-db');

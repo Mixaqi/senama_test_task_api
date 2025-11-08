@@ -14,24 +14,32 @@ cd <senama_test_task_api>
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Create a .env file in the project root
+
 ```
 MONGO_URI=mongodb://localhost:27017
 PORT=3000
 ```
+
 4. Start the server
+
 ```bash
 npm run dev
 ```
+
 Server will run at:
+
 ```
 http://localhost:5000
 ```
+
 GET /todos
+
 ```json
 [
   {
@@ -41,12 +49,16 @@ GET /todos
   }
 ]
 ```
+
 POST /todos
 Request:
+
 ```
 "title": "New task"
 ```
+
 Response:
+
 ```
 {
   "_id": "64f7a1c2e9f1b7c1a2d3e4f5",
@@ -57,12 +69,15 @@ Response:
 
 PUT /todos/:id
 Request:
+
 ```
 {
   "title": "Updated successfully"
 }
 ```
+
 Response:
+
 ```
 {
   "message": "Updated successfully"
@@ -70,6 +85,7 @@ Response:
 ```
 
 PATCH /todos/:id/toggle
+
 ```
 {
     "message": "Toggled successfully"
